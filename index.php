@@ -14,7 +14,7 @@
               ."|(?'ref'[123]:[^ ]*)"
               ."|(?'date'[[:digit:]]{2}\/[[:digit:]]{2}\/[[:digit:]]{4})"
               ."|(?'time'[[:digit:]]{2}:[[:digit:]]{2})"
-              ."|(?'city'[[:alpha:]]* \([[:alpha:]]*\))$/m";
+              ."|(?'city'[[:alpha:][:punct:]]* \([[:alpha:]]*\))$/m";
 
     $teams_rgxp = "/(?'ref'[123]:[[:upper:]]\.[A-Z]* )\g'ref'{1,2}(?'teams'.*\/.*) [[:digit:]]{2}\/[[:digit:]]{2}\/[[:digit:]]{4}/m";
     $address_rgxp = "/[[:digit:]]{2}:[[:digit:]]{2} (?'place'.*) [[:alpha:]]* \([[:alpha:]]*\)$/m";
