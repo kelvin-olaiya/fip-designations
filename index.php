@@ -29,7 +29,7 @@
 
     $championship = $details[0];
     $referees = array();
-    $offset = (count($details) == 6 ? 0 : 1);
+    $offset = count($details) - 6;
     for ($i = 1; $i < 3 + $offset; $i++) {
         $referees[] = $details[$i];
     }
