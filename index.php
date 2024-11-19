@@ -10,7 +10,7 @@
 
     $message = $_POST['message'];
     
-    $details_rgxp = "/(?'championship'U[0-9][0-9][SG]?\/[FGELMS]|DR[1-4])"
+    $details_rgxp = "/(?'championship'U[0-9][0-9][SG]?\/[FGELMS]|DR[1-4]|PM|1DM)"
               ."|(?'ref'[123]:[^ ]*)"
               ."|(?'date'[[:digit:]]{2}\/[[:digit:]]{2}\/[[:digit:]]{4})"
               ."|(?'time'[[:digit:]]{2}:[[:digit:]]{2})"
